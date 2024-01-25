@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol OnboardingViewDelegate: AnyObject {
+    func didTapButton()
+}
+
 class OnboardingCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var containerView: UIView!
@@ -15,6 +19,8 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var getStartedButton: UIButton!
+    
+    weak var delegate: OnboardingViewDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         containerView.layer.backgroundColor = UIColor(red: 0.984, green: 0.958, blue: 1, alpha: 1).cgColor
@@ -47,10 +53,15 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
             getStartedButton?.backgroundColor = UIColor(red: 0.404, green: 0.396, blue: 0.91, alpha: 1)
             getStartedButton?.setTitleColor(.white, for: .normal)
             getStartedButton.layer.cornerRadius = 10
+            
+            getStartedButton.addTarget(self, action: #selector(getStarted), for: .touchUpInside)
         }
 //        else{
 //            
 //        }
     }
+    @objc func getStarted() {
+        delegate?.didTapButton()
+       }
 
 }
