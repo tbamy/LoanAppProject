@@ -15,7 +15,6 @@ class OnboardingViewController: UIViewController{
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var timer: Timer?
     var currentPage = 0
     
     
@@ -25,7 +24,11 @@ class OnboardingViewController: UIViewController{
         myCollectionView.layer.backgroundColor = UIColor(red: 0.984, green: 0.958, blue: 1, alpha: 1).cgColor
         navigationItem.hidesBackButton = true
         
+//        myCollectionView.register(OnboardingCollectionViewCell.self, forCellWithReuseIdentifier: "OnboardingCollectionViewCell")
+
+        
         myCollectionView.register(UINib(nibName: "OnboardingCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "OnboardingCollectionViewCell")
+        
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
         
@@ -33,31 +36,9 @@ class OnboardingViewController: UIViewController{
         pageControl.pageIndicatorTintColor = UIColor.lightGray
         
         
-        startAutoScroll()
-        
     }
 
-    func startAutoScroll() {
-            // Invalidate the timer if it's already running
-            timer?.invalidate()
-            
-            // Set up a timer to trigger the auto-scroll
-            timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(autoScroll), userInfo: nil, repeats: true)
-        }
-    
-    
-    @objc func autoScroll() {
-            // Increment the current index and scroll to the next item
-//        currentPage = (currentPage + 1) % onboardingViews.count
-//            let indexPath = IndexPath(item: currentPage, section: 0)
-//            myCollectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: true)
-        
-        let contentOffset = CGPoint(x: myCollectionView.contentOffset.x + myCollectionView.frame.width, y: myCollectionView.contentOffset.y)
 
-                // Scroll to the next item with a smooth animation
-        myCollectionView.setContentOffset(contentOffset, animated: true)
-        
-        }
 
 }
 
@@ -94,6 +75,7 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
 
 extension OnboardingViewController: OnboardingViewDelegate{
     func didTapButton() {
+//        let nextView = RegisterViewController()
         let nextView = RegisterViewController()
         navigationController?.pushViewController(nextView, animated: true)
     }

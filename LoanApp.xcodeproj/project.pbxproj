@@ -13,13 +13,6 @@
 		A6BC425E2B623B76003EDA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BC425C2B623B76003EDA1D /* LaunchScreen.storyboard */; };
 		A6BC42672B623E08003EDA1D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42652B623E08003EDA1D /* SplashScreenViewController.swift */; };
 		A6BC42682B623E08003EDA1D /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC42662B623E08003EDA1D /* SplashScreenViewController.xib */; };
-		A6BC426D2B6241C1003EDA1D /* OnboardingOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC426B2B6241C1003EDA1D /* OnboardingOneViewController.swift */; };
-		A6BC426E2B6241C1003EDA1D /* OnboardingOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC426C2B6241C1003EDA1D /* OnboardingOneViewController.xib */; };
-		A6BC42712B6241D8003EDA1D /* OnboardingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC426F2B6241D8003EDA1D /* OnboardingTwoViewController.swift */; };
-		A6BC42722B6241D8003EDA1D /* OnboardingTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC42702B6241D8003EDA1D /* OnboardingTwoViewController.xib */; };
-		A6BC42752B6241EA003EDA1D /* OnboardingThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42732B6241EA003EDA1D /* OnboardingThreeViewController.swift */; };
-		A6BC42762B6241EA003EDA1D /* OnboardingThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC42742B6241EA003EDA1D /* OnboardingThreeViewController.xib */; };
-		A6BC427A2B6251D9003EDA1D /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42792B6251D9003EDA1D /* OnboardingPageViewController.swift */; };
 		A6BC42822B62754A003EDA1D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42802B62754A003EDA1D /* RegisterViewController.swift */; };
 		A6BC42832B62754A003EDA1D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC42812B62754A003EDA1D /* RegisterViewController.xib */; };
 		A6BC42862B627559003EDA1D /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42842B627559003EDA1D /* VerificationViewController.swift */; };
@@ -31,6 +24,10 @@
 		A6BC42922B627B53003EDA1D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42902B627B53003EDA1D /* OnboardingViewController.swift */; };
 		A6BC42932B627B53003EDA1D /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC42912B627B53003EDA1D /* OnboardingViewController.xib */; };
 		A6BC42952B627D99003EDA1D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42942B627D99003EDA1D /* OnboardingModel.swift */; };
+		A6BC42972B638DC8003EDA1D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42962B638DC8003EDA1D /* TestView.swift */; };
+		A6BC429A2B63C70C003EDA1D /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42992B63C70C003EDA1D /* NetworkCall.swift */; };
+		A6BC429C2B63C745003EDA1D /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC429B2B63C745003EDA1D /* RegistrationModel.swift */; };
+		A6BC429F2B63DFC4003EDA1D /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC429E2B63DFC4003EDA1D /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,13 +39,6 @@
 		A6BC425F2B623B76003EDA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6BC42652B623E08003EDA1D /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		A6BC42662B623E08003EDA1D /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
-		A6BC426B2B6241C1003EDA1D /* OnboardingOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingOneViewController.swift; sourceTree = "<group>"; };
-		A6BC426C2B6241C1003EDA1D /* OnboardingOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingOneViewController.xib; sourceTree = "<group>"; };
-		A6BC426F2B6241D8003EDA1D /* OnboardingTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTwoViewController.swift; sourceTree = "<group>"; };
-		A6BC42702B6241D8003EDA1D /* OnboardingTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingTwoViewController.xib; sourceTree = "<group>"; };
-		A6BC42732B6241EA003EDA1D /* OnboardingThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThreeViewController.swift; sourceTree = "<group>"; };
-		A6BC42742B6241EA003EDA1D /* OnboardingThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingThreeViewController.xib; sourceTree = "<group>"; };
-		A6BC42792B6251D9003EDA1D /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		A6BC42802B62754A003EDA1D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A6BC42812B62754A003EDA1D /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		A6BC42842B627559003EDA1D /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +50,10 @@
 		A6BC42902B627B53003EDA1D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A6BC42912B627B53003EDA1D /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		A6BC42942B627D99003EDA1D /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		A6BC42962B638DC8003EDA1D /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		A6BC42992B63C70C003EDA1D /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
+		A6BC429B2B63C745003EDA1D /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
+		A6BC429E2B63DFC4003EDA1D /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +86,7 @@
 		A6BC42502B623B72003EDA1D /* LoanApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6BC42982B63C6FA003EDA1D /* NetworkCall */,
 				A6BC427F2B6274EF003EDA1D /* AuthenticationView */,
 				A6BC426A2B623E23003EDA1D /* Onboarding */,
 				A6BC42692B623E0D003EDA1D /* SplashScreen */,
@@ -100,6 +95,7 @@
 				A6BC425A2B623B76003EDA1D /* Assets.xcassets */,
 				A6BC425C2B623B76003EDA1D /* LaunchScreen.storyboard */,
 				A6BC425F2B623B76003EDA1D /* Info.plist */,
+				A6BC42962B638DC8003EDA1D /* TestView.swift */,
 			);
 			path = LoanApp;
 			sourceTree = "<group>";
@@ -116,13 +112,6 @@
 		A6BC426A2B623E23003EDA1D /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				A6BC426B2B6241C1003EDA1D /* OnboardingOneViewController.swift */,
-				A6BC426C2B6241C1003EDA1D /* OnboardingOneViewController.xib */,
-				A6BC426F2B6241D8003EDA1D /* OnboardingTwoViewController.swift */,
-				A6BC42702B6241D8003EDA1D /* OnboardingTwoViewController.xib */,
-				A6BC42732B6241EA003EDA1D /* OnboardingThreeViewController.swift */,
-				A6BC42742B6241EA003EDA1D /* OnboardingThreeViewController.xib */,
-				A6BC42792B6251D9003EDA1D /* OnboardingPageViewController.swift */,
 				A6BC428C2B627B0E003EDA1D /* OnboardingCollectionViewCell.swift */,
 				A6BC428D2B627B0E003EDA1D /* OnboardingCollectionViewCell.xib */,
 				A6BC42902B627B53003EDA1D /* OnboardingViewController.swift */,
@@ -141,8 +130,18 @@
 				A6BC42852B627559003EDA1D /* VerificationViewController.xib */,
 				A6BC42882B627567003EDA1D /* LoginViewController.swift */,
 				A6BC42892B627567003EDA1D /* LoginViewController.xib */,
+				A6BC429E2B63DFC4003EDA1D /* RegistrationViewModel.swift */,
 			);
 			path = AuthenticationView;
+			sourceTree = "<group>";
+		};
+		A6BC42982B63C6FA003EDA1D /* NetworkCall */ = {
+			isa = PBXGroup;
+			children = (
+				A6BC42992B63C70C003EDA1D /* NetworkCall.swift */,
+				A6BC429B2B63C745003EDA1D /* RegistrationModel.swift */,
+			);
+			path = NetworkCall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,13 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6BC42762B6241EA003EDA1D /* OnboardingThreeViewController.xib in Resources */,
 				A6BC42872B627559003EDA1D /* VerificationViewController.xib in Resources */,
-				A6BC42722B6241D8003EDA1D /* OnboardingTwoViewController.xib in Resources */,
 				A6BC42932B627B53003EDA1D /* OnboardingViewController.xib in Resources */,
 				A6BC42832B62754A003EDA1D /* RegisterViewController.xib in Resources */,
 				A6BC428F2B627B0F003EDA1D /* OnboardingCollectionViewCell.xib in Resources */,
-				A6BC426E2B6241C1003EDA1D /* OnboardingOneViewController.xib in Resources */,
 				A6BC42682B623E08003EDA1D /* SplashScreenViewController.xib in Resources */,
 				A6BC425E2B623B76003EDA1D /* LaunchScreen.storyboard in Resources */,
 				A6BC425B2B623B76003EDA1D /* Assets.xcassets in Resources */,
@@ -224,17 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6BC42712B6241D8003EDA1D /* OnboardingTwoViewController.swift in Sources */,
-				A6BC426D2B6241C1003EDA1D /* OnboardingOneViewController.swift in Sources */,
-				A6BC42752B6241EA003EDA1D /* OnboardingThreeViewController.swift in Sources */,
+				A6BC42972B638DC8003EDA1D /* TestView.swift in Sources */,
 				A6BC42822B62754A003EDA1D /* RegisterViewController.swift in Sources */,
+				A6BC429C2B63C745003EDA1D /* RegistrationModel.swift in Sources */,
 				A6BC42522B623B72003EDA1D /* AppDelegate.swift in Sources */,
 				A6BC42542B623B72003EDA1D /* SceneDelegate.swift in Sources */,
 				A6BC42862B627559003EDA1D /* VerificationViewController.swift in Sources */,
 				A6BC42922B627B53003EDA1D /* OnboardingViewController.swift in Sources */,
-				A6BC427A2B6251D9003EDA1D /* OnboardingPageViewController.swift in Sources */,
 				A6BC428A2B627567003EDA1D /* LoginViewController.swift in Sources */,
 				A6BC42672B623E08003EDA1D /* SplashScreenViewController.swift in Sources */,
+				A6BC429F2B63DFC4003EDA1D /* RegistrationViewModel.swift in Sources */,
+				A6BC429A2B63C70C003EDA1D /* NetworkCall.swift in Sources */,
 				A6BC42952B627D99003EDA1D /* OnboardingModel.swift in Sources */,
 				A6BC428E2B627B0E003EDA1D /* OnboardingCollectionViewCell.swift in Sources */,
 			);
