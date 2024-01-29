@@ -21,6 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
+//        let rootController = TabBarViewController()
         let rootController = SplashScreenViewController(nibName: "SplashScreenViewController", bundle: nil)
         window?.rootViewController = UINavigationController(rootViewController: rootController)
         

@@ -8,7 +8,7 @@
 import Foundation
 
 protocol RegistrationDelegate: AnyObject {
-    func registrationDidSucceed(response: RegistrationModel)
+    func registrationDidSucceed(response: RegistrationResponseModel)
     func registrationDidFail(error: Error)
 }
 
@@ -29,17 +29,17 @@ class RegistrationViewModel {
     
     func registerUser(registration: RegistrationModel) async{
         do{
-            let apiEndpointURL = URL(string: "https://a18a-102-88-69-160.ngrok-free.app/api/User/Register")!
+            let apiEndpointURL = URL(string: "https://4f45-102-88-70-64.ngrok-free.app/api/User/Register")!
             
-            //print(registration.convertToApiRequestBody())
+//            print(registration.convertToApiRequestBody())
             
             let responseModel = try await networkCall.apiCall(url: apiEndpointURL, httpMethod: "POST", httpBodyPayload: registration.convertToApiRequestBody())
 
-            print("API Response: \(responseModel!)")
+//            print("API Response: \(responseModel!)")
             delegate?.registrationDidSucceed(response: responseModel!)
             
         }catch{
-            print("Registration failed with error: \(error)")
+//            print("Registration failed with error: \(error)")
             delegate?.registrationDidFail(error: error)
         }
     }

@@ -32,5 +32,10 @@ class RegistrationModel: Codable{
     }
 }
 
+class RegistrationResponseModel: Codable{
+    let message: String?
+    let success: Bool?
+}
+
 
 

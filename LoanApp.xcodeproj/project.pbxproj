@@ -28,6 +28,15 @@
 		A6BC429A2B63C70C003EDA1D /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42992B63C70C003EDA1D /* NetworkCall.swift */; };
 		A6BC429C2B63C745003EDA1D /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC429B2B63C745003EDA1D /* RegistrationModel.swift */; };
 		A6BC429F2B63DFC4003EDA1D /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC429E2B63DFC4003EDA1D /* RegistrationViewModel.swift */; };
+		A6BC42A32B66D112003EDA1D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42A12B66D112003EDA1D /* HomePageViewController.swift */; };
+		A6BC42A42B66D112003EDA1D /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC42A22B66D112003EDA1D /* HomePageViewController.xib */; };
+		A6BC42A72B66D925003EDA1D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42A52B66D925003EDA1D /* TabBarViewController.swift */; };
+		A6BC42AB2B678B3D003EDA1D /* StageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42A92B678B3D003EDA1D /* StageViewController.swift */; };
+		A6BC42AC2B678B3D003EDA1D /* StageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC42AA2B678B3D003EDA1D /* StageViewController.xib */; };
+		A6BC42AF2B678B4D003EDA1D /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42AD2B678B4D003EDA1D /* MessageViewController.swift */; };
+		A6BC42B02B678B4D003EDA1D /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC42AE2B678B4D003EDA1D /* MessageViewController.xib */; };
+		A6BC42B32B678B5B003EDA1D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42B12B678B5B003EDA1D /* SettingsViewController.swift */; };
+		A6BC42B42B678B5B003EDA1D /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BC42B22B678B5B003EDA1D /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +63,15 @@
 		A6BC42992B63C70C003EDA1D /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
 		A6BC429B2B63C745003EDA1D /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
 		A6BC429E2B63DFC4003EDA1D /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		A6BC42A12B66D112003EDA1D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		A6BC42A22B66D112003EDA1D /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		A6BC42A52B66D925003EDA1D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A6BC42A92B678B3D003EDA1D /* StageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
+		A6BC42AA2B678B3D003EDA1D /* StageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StageViewController.xib; sourceTree = "<group>"; };
+		A6BC42AD2B678B4D003EDA1D /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		A6BC42AE2B678B4D003EDA1D /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		A6BC42B12B678B5B003EDA1D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A6BC42B22B678B5B003EDA1D /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +104,7 @@
 		A6BC42502B623B72003EDA1D /* LoanApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6BC42A02B66D0F4003EDA1D /* Pages */,
 				A6BC42982B63C6FA003EDA1D /* NetworkCall */,
 				A6BC427F2B6274EF003EDA1D /* AuthenticationView */,
 				A6BC426A2B623E23003EDA1D /* Onboarding */,
@@ -142,6 +161,22 @@
 				A6BC429B2B63C745003EDA1D /* RegistrationModel.swift */,
 			);
 			path = NetworkCall;
+			sourceTree = "<group>";
+		};
+		A6BC42A02B66D0F4003EDA1D /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				A6BC42A12B66D112003EDA1D /* HomePageViewController.swift */,
+				A6BC42A22B66D112003EDA1D /* HomePageViewController.xib */,
+				A6BC42A52B66D925003EDA1D /* TabBarViewController.swift */,
+				A6BC42A92B678B3D003EDA1D /* StageViewController.swift */,
+				A6BC42AA2B678B3D003EDA1D /* StageViewController.xib */,
+				A6BC42AD2B678B4D003EDA1D /* MessageViewController.swift */,
+				A6BC42AE2B678B4D003EDA1D /* MessageViewController.xib */,
+				A6BC42B12B678B5B003EDA1D /* SettingsViewController.swift */,
+				A6BC42B22B678B5B003EDA1D /* SettingsViewController.xib */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,13 +237,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BC42B42B678B5B003EDA1D /* SettingsViewController.xib in Resources */,
 				A6BC42872B627559003EDA1D /* VerificationViewController.xib in Resources */,
+				A6BC42B02B678B4D003EDA1D /* MessageViewController.xib in Resources */,
 				A6BC42932B627B53003EDA1D /* OnboardingViewController.xib in Resources */,
+				A6BC42AC2B678B3D003EDA1D /* StageViewController.xib in Resources */,
 				A6BC42832B62754A003EDA1D /* RegisterViewController.xib in Resources */,
 				A6BC428F2B627B0F003EDA1D /* OnboardingCollectionViewCell.xib in Resources */,
 				A6BC42682B623E08003EDA1D /* SplashScreenViewController.xib in Resources */,
 				A6BC425E2B623B76003EDA1D /* LaunchScreen.storyboard in Resources */,
 				A6BC425B2B623B76003EDA1D /* Assets.xcassets in Resources */,
+				A6BC42A42B66D112003EDA1D /* HomePageViewController.xib in Resources */,
 				A6BC428B2B627567003EDA1D /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,12 +266,17 @@
 				A6BC42542B623B72003EDA1D /* SceneDelegate.swift in Sources */,
 				A6BC42862B627559003EDA1D /* VerificationViewController.swift in Sources */,
 				A6BC42922B627B53003EDA1D /* OnboardingViewController.swift in Sources */,
+				A6BC42AB2B678B3D003EDA1D /* StageViewController.swift in Sources */,
 				A6BC428A2B627567003EDA1D /* LoginViewController.swift in Sources */,
+				A6BC42A32B66D112003EDA1D /* HomePageViewController.swift in Sources */,
 				A6BC42672B623E08003EDA1D /* SplashScreenViewController.swift in Sources */,
 				A6BC429F2B63DFC4003EDA1D /* RegistrationViewModel.swift in Sources */,
 				A6BC429A2B63C70C003EDA1D /* NetworkCall.swift in Sources */,
+				A6BC42AF2B678B4D003EDA1D /* MessageViewController.swift in Sources */,
 				A6BC42952B627D99003EDA1D /* OnboardingModel.swift in Sources */,
+				A6BC42A72B66D925003EDA1D /* TabBarViewController.swift in Sources */,
 				A6BC428E2B627B0E003EDA1D /* OnboardingCollectionViewCell.swift in Sources */,
+				A6BC42B32B678B5B003EDA1D /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

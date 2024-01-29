@@ -28,6 +28,8 @@ class RegisterViewController: UIViewController {
     
     let networkCall = NetworkCall()
     var registrationViewModel: RegistrationViewModel!
+    
+    var registrationResponseModel: RegistrationResponseModel?
     var registrationModel: RegistrationModel?
 
     override func viewDidLoad() {
@@ -105,7 +107,7 @@ class RegisterViewController: UIViewController {
         
     }
 
-    func registerUser() async {
+    func userRegistration() async {
         guard let name = nameLabel.text, !name.isEmpty,
                 let email = emailLabel.text, !email.isEmpty,
                 let password = passwordLabel.text, !password.isEmpty else {
@@ -127,7 +129,7 @@ class RegisterViewController: UIViewController {
     @objc func registration() {
         
         Task {
-                await registerUser()
+                await userRegistration()
             }
 
         
@@ -157,17 +159,41 @@ class RegisterViewController: UIViewController {
             let signInController = LoginViewController()
             navigationController?.pushViewController(signInController, animated: true)
         }
+    
+
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        // Add an action (button)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        
+        // Present the alert
+        present(alertController, animated: true, completion: nil)
+    }
 
 }
 extension RegisterViewController: RegistrationDelegate{
     
-    func registrationDidSucceed(response: RegistrationModel) {
-        print("succeeded")
+    func registrationDidSucceed(response: RegistrationResponseModel) {
+//        let response = response.message
+        
+        if response.success == true{
+            let message = response.message
+            showAlert(title: "Success", message: message ?? "Login Successful")
+            let otpController = VerificationViewController()
+            navigationController?.pushViewController(otpController, animated: true)
+        }else{
+            showAlert(title: "Error", message: "Error Occurred, Try Again")
+        }
+//        print("This is the response \(response)")
+        
+        
     }
     
     func registrationDidFail(error: Error) {
-//        errorLabel.text = reg
-        print("Registration did fail")
+        showAlert(title: "Error", message: "Error Occurred, Please Try Again")
+//        print(error)
     }
     
     
