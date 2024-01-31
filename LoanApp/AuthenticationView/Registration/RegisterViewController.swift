@@ -32,11 +32,15 @@ class RegisterViewController: UIViewController {
     var registrationResponseModel: RegistrationResponseModel?
     var registrationModel: RegistrationModel?
 
+    let activityIndicator = UIActivityIndicatorView(style: .large)
     override func viewDidLoad() {
         super.viewDidLoad()
     
 
         view.layer.backgroundColor = UIColor(red: 0.984, green: 0.958, blue: 1, alpha: 1).cgColor
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.center = view.center
+        view.addSubview(activityIndicator)
         
         regContainer.layer.cornerRadius = 20
         regContainer.backgroundColor = UIColor.white
@@ -108,6 +112,7 @@ class RegisterViewController: UIViewController {
     }
 
     func userRegistration() async {
+        activityIndicator.startAnimating()
         guard let name = nameLabel.text, !name.isEmpty,
                 let email = emailLabel.text, !email.isEmpty,
                 let password = passwordLabel.text, !password.isEmpty else {
@@ -118,11 +123,9 @@ class RegisterViewController: UIViewController {
 
         let registrationModel = RegistrationModel(name: name, email: email, password: password)
 
-//        do {
+
              await registrationViewModel.registerUser(registration: registrationModel)
-//        } catch {
-//            print("Registration failed with error: \(error)")
-//        }
+
     }
 
     
@@ -159,32 +162,35 @@ class RegisterViewController: UIViewController {
             let signInController = LoginViewController()
             navigationController?.pushViewController(signInController, animated: true)
         }
-    
 
-    func showAlert(title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-        // Add an action (button)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        
-        // Present the alert
-        present(alertController, animated: true, completion: nil)
+    
+    func showAlert(title: String, message: String, completion: ((UIAlertAction) -> Void)? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: completion))
+        present(alert, animated: true, completion: nil)
     }
 
 }
+
+
+
 extension RegisterViewController: RegistrationDelegate{
     
     func registrationDidSucceed(response: RegistrationResponseModel) {
 //        let response = response.message
+        print(response)
         
         if response.success == true{
+            self.activityIndicator.stopAnimating()
             let message = response.message
-            showAlert(title: "Success", message: message ?? "Login Successful")
-            let otpController = VerificationViewController()
-            navigationController?.pushViewController(otpController, animated: true)
+            showAlert(title: "Success", message: message ?? "Registration Successful") { _ in
+                    let otpController = VerificationViewController()
+                    self.navigationController?.pushViewController(otpController, animated: true)
+                }
         }else{
-            showAlert(title: "Error", message: "Error Occurred, Try Again")
+            self.activityIndicator.stopAnimating()
+            let message = response.message
+            showAlert(title: "Error", message: message ?? "Error Occurred, Try Again")
         }
 //        print("This is the response \(response)")
         

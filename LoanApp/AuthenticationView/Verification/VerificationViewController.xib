@@ -16,12 +16,14 @@
                 <outlet property="resendLabel" destination="ALd-IM-gbc" id="S1L-1Q-LOq"/>
                 <outlet property="submitBtn" destination="Zi6-Xz-wRq" id="DBW-Us-oQP"/>
                 <outlet property="subtitleLabel" destination="Njh-s9-oCV" id="FNR-5d-WeY"/>
-                <outlet property="textBoxFour" destination="nIk-at-qRd" id="w6l-AG-sdG"/>
-                <outlet property="textBoxOne" destination="PSv-hz-ohE" id="VgX-se-bCM"/>
-                <outlet property="textBoxThree" destination="OuK-Ou-oif" id="WK8-TO-w2f"/>
-                <outlet property="textBoxTwo" destination="JQk-mc-LS0" id="2rl-pw-aRL"/>
                 <outlet property="titleLabel" destination="HBV-Ja-QKY" id="YwW-qM-5x2"/>
                 <outlet property="view" destination="GJR-M8-8W6" id="gSU-0A-fC8"/>
+                <outletCollection property="textFields" destination="PSv-hz-ohE" collectionClass="NSMutableArray" id="T4l-oP-a5g"/>
+                <outletCollection property="textFields" destination="JQk-mc-LS0" collectionClass="NSMutableArray" id="vJ1-yR-c8M"/>
+                <outletCollection property="textFields" destination="OuK-Ou-oif" collectionClass="NSMutableArray" id="Vak-zt-FsR"/>
+                <outletCollection property="textFields" destination="nIk-at-qRd" collectionClass="NSMutableArray" id="kk6-sA-2sP"/>
+                <outletCollection property="textFields" destination="Zi2-mO-KOU" collectionClass="NSMutableArray" id="Q27-99-dlo"/>
+                <outletCollection property="textFields" destination="rhm-G0-cAa" collectionClass="NSMutableArray" id="qJZ-As-o2Q"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -55,44 +57,64 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m2C-vY-zbc">
-                    <rect key="frame" x="50" y="249.33333333333337" width="300" height="60"/>
+                    <rect key="frame" x="20" y="249.33333333333337" width="340" height="60"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSv-hz-ohE">
-                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="60"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="60" id="lsI-8k-qWQ"/>
+                                <constraint firstAttribute="width" constant="40" id="lsI-8k-qWQ"/>
                                 <constraint firstAttribute="height" constant="60" id="tP2-Dn-24c"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQk-mc-LS0">
-                            <rect key="frame" x="80" y="0.0" width="60" height="60"/>
+                            <rect key="frame" x="60" y="0.0" width="40" height="60"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="60" id="9av-BK-F0j"/>
+                                <constraint firstAttribute="width" constant="40" id="9av-BK-F0j"/>
                                 <constraint firstAttribute="height" constant="60" id="jWV-U7-duI"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OuK-Ou-oif">
-                            <rect key="frame" x="160" y="0.0" width="60" height="60"/>
+                            <rect key="frame" x="120" y="0.0" width="40" height="60"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="60" id="KcU-zd-HVP"/>
+                                <constraint firstAttribute="width" constant="40" id="KcU-zd-HVP"/>
                                 <constraint firstAttribute="height" constant="60" id="KlC-xQ-3XJ"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIk-at-qRd">
-                            <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                            <rect key="frame" x="180" y="0.0" width="40" height="60"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="eDh-K6-v1b"/>
-                                <constraint firstAttribute="width" constant="60" id="gat-g3-AFp"/>
+                                <constraint firstAttribute="width" constant="40" id="gat-g3-AFp"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zi2-mO-KOU">
+                            <rect key="frame" x="240" y="0.0" width="40" height="60"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="JpO-d7-HJA"/>
+                                <constraint firstAttribute="width" constant="40" id="V5Q-n3-8MI"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rhm-G0-cAa">
+                            <rect key="frame" x="300" y="0.0" width="40" height="60"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="fhA-7Q-Sgq"/>
+                                <constraint firstAttribute="height" constant="60" id="gIb-f2-LXN"/>
                             </constraints>
                             <nil key="textColor"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
@@ -140,7 +162,7 @@
                 <constraint firstItem="2MR-6R-OX7" firstAttribute="trailing" secondItem="HBV-Ja-QKY" secondAttribute="trailing" constant="20" id="l7E-fc-ZqV"/>
                 <constraint firstItem="Njh-s9-oCV" firstAttribute="top" secondItem="HBV-Ja-QKY" secondAttribute="bottom" constant="20" id="nfW-tO-nXO"/>
                 <constraint firstItem="HBV-Ja-QKY" firstAttribute="top" secondItem="2MR-6R-OX7" secondAttribute="top" constant="20" id="rca-UY-D5x"/>
-                <constraint firstItem="m2C-vY-zbc" firstAttribute="leading" secondItem="2MR-6R-OX7" secondAttribute="leading" constant="50" id="uyt-m4-YhI"/>
+                <constraint firstItem="m2C-vY-zbc" firstAttribute="leading" secondItem="2MR-6R-OX7" secondAttribute="leading" constant="20" id="uyt-m4-YhI"/>
                 <constraint firstItem="Njh-s9-oCV" firstAttribute="leading" secondItem="2MR-6R-OX7" secondAttribute="leading" constant="20" id="y9t-nt-XzZ"/>
             </constraints>
             <point key="canvasLocation" x="-915.26717557251902" y="19.718309859154932"/>

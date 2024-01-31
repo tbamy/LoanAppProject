@@ -29,11 +29,11 @@ class RegistrationViewModel {
     
     func registerUser(registration: RegistrationModel) async{
         do{
-            let apiEndpointURL = URL(string: "https://4f45-102-88-70-64.ngrok-free.app/api/User/Register")!
+            let apiEndpointURL = URL(string: "https://ab78-102-88-70-102.ngrok-free.app/api/User/Register")!
             
 //            print(registration.convertToApiRequestBody())
             
-            let responseModel = try await networkCall.apiCall(url: apiEndpointURL, httpMethod: "POST", httpBodyPayload: registration.convertToApiRequestBody())
+            let responseModel = try await networkCall.RegisterApiCall(url: apiEndpointURL, httpMethod: "POST", httpBodyPayload: registration.convertToApiRequestBody())
 
 //            print("API Response: \(responseModel!)")
             delegate?.registrationDidSucceed(response: responseModel!)

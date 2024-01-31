@@ -22,7 +22,7 @@ class TabBarViewController: UITabBarController {
         
         
         
-        self.tabBar.barTintColor = .green
+        self.tabBar.barTintColor = .white
         self.tabBar.tintColor = UIColor(red: 0.404, green: 0.396, blue: 0.91, alpha: 1)
         
         homeController.tabBarItem.title = "HOME"

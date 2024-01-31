@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RegistrationModel: Codable{
+class RegistrationModel{
     let name: String
     let email: String
     let password: String
