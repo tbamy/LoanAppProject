@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StageViewController" customModule="LoanApp" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="oza-V3-dZB" id="qQe-Pm-beG"/>
+                <outlet property="tableView" destination="KME-TR-7kx" id="UXv-8n-CN2"/>
+                <outlet property="view" destination="O5J-xG-ZWs" id="noO-ad-GO2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="O5J-xG-ZWs">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oza-V3-dZB">
+                    <rect key="frame" x="0.0" y="-24" width="393" height="900"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KME-TR-7kx">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="850"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="9fQ-ax-aDE"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KME-TR-7kx" secondAttribute="bottom" constant="50" id="CGz-24-y1H"/>
+                        <constraint firstAttribute="trailing" secondItem="KME-TR-7kx" secondAttribute="trailing" id="Qdm-9X-7Y6"/>
+                        <constraint firstItem="KME-TR-7kx" firstAttribute="top" secondItem="oza-V3-dZB" secondAttribute="top" id="bSf-ix-VAw"/>
+                        <constraint firstItem="KME-TR-7kx" firstAttribute="leading" secondItem="oza-V3-dZB" secondAttribute="leading" id="yeT-IJ-NRs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="sHp-ke-g7o"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oza-V3-dZB" firstAttribute="centerY" secondItem="O5J-xG-ZWs" secondAttribute="centerY" id="8rS-My-GRa"/>
+                <constraint firstItem="oza-V3-dZB" firstAttribute="leading" secondItem="sHp-ke-g7o" secondAttribute="leading" id="S0F-Fj-aWH"/>
+                <constraint firstItem="oza-V3-dZB" firstAttribute="top" secondItem="O5J-xG-ZWs" secondAttribute="top" constant="-24" id="mle-fa-THM"/>
+                <constraint firstItem="oza-V3-dZB" firstAttribute="centerX" secondItem="O5J-xG-ZWs" secondAttribute="centerX" id="vas-WI-OJ6"/>
+            </constraints>
+            <point key="canvasLocation" x="351.90839694656489" y="-7.042253521126761"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

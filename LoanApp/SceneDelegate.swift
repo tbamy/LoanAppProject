@@ -21,13 +21,52 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let rootController = TabBarViewController()
+//        KeychainHelper.standard.deleteAllItems()
+        
 //        let rootController = SplashScreenViewController(nibName: "SplashScreenViewController", bundle: nil)
-//        let rootController = VerificationViewController(nibName: "VerificationViewController", bundle: nil)
+//        window?.rootViewController = UINavigationController(rootViewController: rootController)
+//        
+//        window?.makeKeyAndVisible()
+        
+        if isLoggedIn() {
+            showHomeScreen()
+        } else if isExistingUser() {
+            showLoginScreen()
+        } else {
+            showSplashScreen()
+        }
+        
+    }
+    
+    func isExistingUser() -> Bool {
+        return KeychainHelper.standard.read(service: "userFirstName", account: "loanApp") != nil
+               || KeychainHelper.standard.read(service: "userLastName", account: "loanApp") != nil
+               || KeychainHelper.standard.read(service: "userEmail", account: "loanApp") != nil
+    }
+    
+    func isLoggedIn() -> Bool {
+        return KeychainHelper.standard.read(service: "userToken", account: "loanApp") != nil
+    }
+
+    func showLoginScreen() {
+        let rootController = LoginViewController(nibName: "LoginViewController", bundle: nil)
         window?.rootViewController = UINavigationController(rootViewController: rootController)
         
         window?.makeKeyAndVisible()
+    }
+    
+    func showHomeScreen() {
+        let rootController = TabBarViewController()
+        window?.rootViewController = UINavigationController(rootViewController: rootController)
         
+        window?.makeKeyAndVisible()
+    }
+
+    func showSplashScreen() {
+        let rootController = SplashScreenViewController(nibName: "SplashScreenViewController", bundle: nil)
+        window?.rootViewController = UINavigationController(rootViewController: rootController)
+        
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

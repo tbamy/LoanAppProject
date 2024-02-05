@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1DCB085F4BF57EAF118AA4 /* Pods_LoanApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF602258D7749E3B2C2543BB /* Pods_LoanApp.framework */; };
+		A650EC572B6CD89400A61B0A /* LoanApplicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650EC552B6CD89400A61B0A /* LoanApplicationTableViewCell.swift */; };
+		A650EC582B6CD89400A61B0A /* LoanApplicationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A650EC562B6CD89400A61B0A /* LoanApplicationTableViewCell.xib */; };
+		A650EC5B2B6CD92300A61B0A /* LoanApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650EC592B6CD92300A61B0A /* LoanApplicationViewController.swift */; };
+		A650EC5C2B6CD92300A61B0A /* LoanApplicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A650EC5A2B6CD92300A61B0A /* LoanApplicationViewController.xib */; };
+		A650EC5E2B6CEAEE00A61B0A /* LoanApplicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650EC5D2B6CEAEE00A61B0A /* LoanApplicationModel.swift */; };
+		A656F80A2B6F8777007F3884 /* ApplicationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656F8082B6F8777007F3884 /* ApplicationFormViewController.swift */; };
+		A656F80B2B6F8777007F3884 /* ApplicationFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A656F8092B6F8777007F3884 /* ApplicationFormViewController.xib */; };
 		A66AA91B2B6A261200235735 /* HomeServiceCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66AA91A2B6A261200235735 /* HomeServiceCollectionViewModel.swift */; };
+		A6A8D0532B6A842F006E0B11 /* StageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A8D0512B6A842F006E0B11 /* StageTableViewCell.swift */; };
+		A6A8D0542B6A842F006E0B11 /* StageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A8D0522B6A842F006E0B11 /* StageTableViewCell.xib */; };
+		A6A8D0562B6B78F6006E0B11 /* StageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A8D0552B6B78F6006E0B11 /* StageViewModel.swift */; };
+		A6A8D05A2B6BDE39006E0B11 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A8D0592B6BDE39006E0B11 /* KeychainHelper.swift */; };
 		A6BC42522B623B72003EDA1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42512B623B72003EDA1D /* AppDelegate.swift */; };
 		A6BC42542B623B72003EDA1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC42532B623B72003EDA1D /* SceneDelegate.swift */; };
 		A6BC425B2B623B76003EDA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BC425A2B623B76003EDA1D /* Assets.xcassets */; };
@@ -47,7 +59,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F7A40D7CA9FE7CE415E5EE8 /* Pods-LoanApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanApp.release.xcconfig"; path = "Target Support Files/Pods-LoanApp/Pods-LoanApp.release.xcconfig"; sourceTree = "<group>"; };
+		781654B0FFC4A7DE1B9C8665 /* Pods-LoanApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanApp.debug.xcconfig"; path = "Target Support Files/Pods-LoanApp/Pods-LoanApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A650EC552B6CD89400A61B0A /* LoanApplicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationTableViewCell.swift; sourceTree = "<group>"; };
+		A650EC562B6CD89400A61B0A /* LoanApplicationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanApplicationTableViewCell.xib; sourceTree = "<group>"; };
+		A650EC592B6CD92300A61B0A /* LoanApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationViewController.swift; sourceTree = "<group>"; };
+		A650EC5A2B6CD92300A61B0A /* LoanApplicationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanApplicationViewController.xib; sourceTree = "<group>"; };
+		A650EC5D2B6CEAEE00A61B0A /* LoanApplicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationModel.swift; sourceTree = "<group>"; };
+		A656F8082B6F8777007F3884 /* ApplicationFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFormViewController.swift; sourceTree = "<group>"; };
+		A656F8092B6F8777007F3884 /* ApplicationFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApplicationFormViewController.xib; sourceTree = "<group>"; };
 		A66AA91A2B6A261200235735 /* HomeServiceCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceCollectionViewModel.swift; sourceTree = "<group>"; };
+		A6A8D0512B6A842F006E0B11 /* StageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageTableViewCell.swift; sourceTree = "<group>"; };
+		A6A8D0522B6A842F006E0B11 /* StageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StageTableViewCell.xib; sourceTree = "<group>"; };
+		A6A8D0552B6B78F6006E0B11 /* StageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageViewModel.swift; sourceTree = "<group>"; };
+		A6A8D0592B6BDE39006E0B11 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		A6BC42512B623B72003EDA1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6BC42532B623B72003EDA1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A6BC425A2B623B76003EDA1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +111,7 @@
 		A6BC42C02B693CFB003EDA1D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A6BC42C22B694D41003EDA1D /* HomeServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A6BC42C32B694D41003EDA1D /* HomeServicesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeServicesCollectionViewCell.xib; sourceTree = "<group>"; };
+		DF602258D7749E3B2C2543BB /* Pods_LoanApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoanApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,17 +119,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1DCB085F4BF57EAF118AA4 /* Pods_LoanApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54E7A0BBFA1F4BCAB58D6A5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				781654B0FFC4A7DE1B9C8665 /* Pods-LoanApp.debug.xcconfig */,
+				5F7A40D7CA9FE7CE415E5EE8 /* Pods-LoanApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6A8D0572B6BAACA006E0B11 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A6BC42A12B66D112003EDA1D /* HomePageViewController.swift */,
+				A6BC42A22B66D112003EDA1D /* HomePageViewController.xib */,
+				A6BC42C22B694D41003EDA1D /* HomeServicesCollectionViewCell.swift */,
+				A6BC42C32B694D41003EDA1D /* HomeServicesCollectionViewCell.xib */,
+				A66AA91A2B6A261200235735 /* HomeServiceCollectionViewModel.swift */,
+				A650EC552B6CD89400A61B0A /* LoanApplicationTableViewCell.swift */,
+				A650EC562B6CD89400A61B0A /* LoanApplicationTableViewCell.xib */,
+				A650EC592B6CD92300A61B0A /* LoanApplicationViewController.swift */,
+				A650EC5A2B6CD92300A61B0A /* LoanApplicationViewController.xib */,
+				A650EC5D2B6CEAEE00A61B0A /* LoanApplicationModel.swift */,
+				A656F8082B6F8777007F3884 /* ApplicationFormViewController.swift */,
+				A656F8092B6F8777007F3884 /* ApplicationFormViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A6A8D0582B6BAAEC006E0B11 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				A6BC42A92B678B3D003EDA1D /* StageViewController.swift */,
+				A6BC42AA2B678B3D003EDA1D /* StageViewController.xib */,
+				A6A8D0512B6A842F006E0B11 /* StageTableViewCell.swift */,
+				A6A8D0522B6A842F006E0B11 /* StageTableViewCell.xib */,
+				A6A8D0552B6B78F6006E0B11 /* StageViewModel.swift */,
+			);
+			path = Stage;
+			sourceTree = "<group>";
+		};
 		A6BC42452B623B72003EDA1D = {
 			isa = PBXGroup;
 			children = (
 				A6BC42502B623B72003EDA1D /* LoanApp */,
 				A6BC42BD2B691E43003EDA1D /* LoanApp.app */,
+				54E7A0BBFA1F4BCAB58D6A5E /* Pods */,
+				C4CB1E1956AFAF5E66DCFDFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +181,7 @@
 			children = (
 				A6BC42A02B66D0F4003EDA1D /* Pages */,
 				A6BC42982B63C6FA003EDA1D /* NetworkCall */,
-				A6BC427F2B6274EF003EDA1D /* AuthenticationView */,
+				A6BC427F2B6274EF003EDA1D /* Authentication */,
 				A6BC426A2B623E23003EDA1D /* Onboarding */,
 				A6BC42692B623E0D003EDA1D /* SplashScreen */,
 				A6BC42512B623B72003EDA1D /* AppDelegate.swift */,
@@ -121,6 +190,7 @@
 				A6BC425C2B623B76003EDA1D /* LaunchScreen.storyboard */,
 				A6BC425F2B623B76003EDA1D /* Info.plist */,
 				A6BC42962B638DC8003EDA1D /* TestView.swift */,
+				A6A8D0592B6BDE39006E0B11 /* KeychainHelper.swift */,
 			);
 			path = LoanApp;
 			sourceTree = "<group>";
@@ -146,14 +216,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		A6BC427F2B6274EF003EDA1D /* AuthenticationView */ = {
+		A6BC427F2B6274EF003EDA1D /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				A6BC42B92B686067003EDA1D /* Login */,
 				A6BC42B82B68605A003EDA1D /* Verification */,
 				A6BC42B72B68604D003EDA1D /* Registration */,
 			);
-			path = AuthenticationView;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		A6BC42982B63C6FA003EDA1D /* NetworkCall */ = {
@@ -170,18 +240,13 @@
 		A6BC42A02B66D0F4003EDA1D /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				A6BC42A12B66D112003EDA1D /* HomePageViewController.swift */,
-				A6BC42A22B66D112003EDA1D /* HomePageViewController.xib */,
+				A6A8D0582B6BAAEC006E0B11 /* Stage */,
+				A6A8D0572B6BAACA006E0B11 /* Home */,
 				A6BC42A52B66D925003EDA1D /* TabBarViewController.swift */,
-				A6BC42A92B678B3D003EDA1D /* StageViewController.swift */,
-				A6BC42AA2B678B3D003EDA1D /* StageViewController.xib */,
 				A6BC42AD2B678B4D003EDA1D /* MessageViewController.swift */,
 				A6BC42AE2B678B4D003EDA1D /* MessageViewController.xib */,
 				A6BC42B12B678B5B003EDA1D /* SettingsViewController.swift */,
 				A6BC42B22B678B5B003EDA1D /* SettingsViewController.xib */,
-				A6BC42C22B694D41003EDA1D /* HomeServicesCollectionViewCell.swift */,
-				A6BC42C32B694D41003EDA1D /* HomeServicesCollectionViewCell.xib */,
-				A66AA91A2B6A261200235735 /* HomeServiceCollectionViewModel.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -216,6 +281,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		C4CB1E1956AFAF5E66DCFDFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF602258D7749E3B2C2543BB /* Pods_LoanApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6BC42622B623B76003EDA1D /* Build configuration list for PBXNativeTarget "LoanApp" */;
 			buildPhases = (
+				FCFDB9865DED071D2F02B683 /* [CP] Check Pods Manifest.lock */,
 				A6BC424A2B623B72003EDA1D /* Sources */,
 				A6BC424B2B623B72003EDA1D /* Frameworks */,
 				A6BC424C2B623B72003EDA1D /* Resources */,
+				238F9BDA9340FDCE8AD34C28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +351,7 @@
 			files = (
 				A6BC42B42B678B5B003EDA1D /* SettingsViewController.xib in Resources */,
 				A6BC42872B627559003EDA1D /* VerificationViewController.xib in Resources */,
+				A6A8D0542B6A842F006E0B11 /* StageTableViewCell.xib in Resources */,
 				A6BC42B02B678B4D003EDA1D /* MessageViewController.xib in Resources */,
 				A6BC42932B627B53003EDA1D /* OnboardingViewController.xib in Resources */,
 				A6BC42AC2B678B3D003EDA1D /* StageViewController.xib in Resources */,
@@ -283,23 +359,71 @@
 				A6BC428F2B627B0F003EDA1D /* OnboardingCollectionViewCell.xib in Resources */,
 				A6BC42682B623E08003EDA1D /* SplashScreenViewController.xib in Resources */,
 				A6BC425E2B623B76003EDA1D /* LaunchScreen.storyboard in Resources */,
+				A650EC582B6CD89400A61B0A /* LoanApplicationTableViewCell.xib in Resources */,
 				A6BC425B2B623B76003EDA1D /* Assets.xcassets in Resources */,
 				A6BC42C52B694D41003EDA1D /* HomeServicesCollectionViewCell.xib in Resources */,
+				A650EC5C2B6CD92300A61B0A /* LoanApplicationViewController.xib in Resources */,
 				A6BC42A42B66D112003EDA1D /* HomePageViewController.xib in Resources */,
 				A6BC428B2B627567003EDA1D /* LoginViewController.xib in Resources */,
+				A656F80B2B6F8777007F3884 /* ApplicationFormViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		238F9BDA9340FDCE8AD34C28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoanApp/Pods-LoanApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoanApp/Pods-LoanApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoanApp/Pods-LoanApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCFDB9865DED071D2F02B683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoanApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6BC424A2B623B72003EDA1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A650EC5B2B6CD92300A61B0A /* LoanApplicationViewController.swift in Sources */,
 				A6BC42972B638DC8003EDA1D /* TestView.swift in Sources */,
 				A66AA91B2B6A261200235735 /* HomeServiceCollectionViewModel.swift in Sources */,
+				A6A8D0532B6A842F006E0B11 /* StageTableViewCell.swift in Sources */,
 				A6BC42BF2B692C60003EDA1D /* LoginModel.swift in Sources */,
+				A6A8D05A2B6BDE39006E0B11 /* KeychainHelper.swift in Sources */,
 				A6BC42C12B693CFB003EDA1D /* LoginViewModel.swift in Sources */,
 				A6BC42822B62754A003EDA1D /* RegisterViewController.swift in Sources */,
 				A6BC429C2B63C745003EDA1D /* RegistrationModel.swift in Sources */,
@@ -310,17 +434,21 @@
 				A6BC42922B627B53003EDA1D /* OnboardingViewController.swift in Sources */,
 				A6BC42AB2B678B3D003EDA1D /* StageViewController.swift in Sources */,
 				A6BC428A2B627567003EDA1D /* LoginViewController.swift in Sources */,
+				A656F80A2B6F8777007F3884 /* ApplicationFormViewController.swift in Sources */,
 				A6BC42A32B66D112003EDA1D /* HomePageViewController.swift in Sources */,
 				A6BC42672B623E08003EDA1D /* SplashScreenViewController.swift in Sources */,
 				A6BC429F2B63DFC4003EDA1D /* RegistrationViewModel.swift in Sources */,
+				A650EC572B6CD89400A61B0A /* LoanApplicationTableViewCell.swift in Sources */,
 				A6BC42BB2B6860BF003EDA1D /* VerificationViewModel.swift in Sources */,
 				A6BC429A2B63C70C003EDA1D /* NetworkCall.swift in Sources */,
 				A6BC42AF2B678B4D003EDA1D /* MessageViewController.swift in Sources */,
 				A6BC42C42B694D41003EDA1D /* HomeServicesCollectionViewCell.swift in Sources */,
 				A6BC42952B627D99003EDA1D /* OnboardingModel.swift in Sources */,
 				A6BC42A72B66D925003EDA1D /* TabBarViewController.swift in Sources */,
+				A650EC5E2B6CEAEE00A61B0A /* LoanApplicationModel.swift in Sources */,
 				A6BC428E2B627B0E003EDA1D /* OnboardingCollectionViewCell.swift in Sources */,
 				A6BC42B32B678B5B003EDA1D /* SettingsViewController.swift in Sources */,
+				A6A8D0562B6B78F6006E0B11 /* StageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,9 +501,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -436,9 +565,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -459,6 +589,7 @@
 		};
 		A6BC42632B623B76003EDA1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 781654B0FFC4A7DE1B9C8665 /* Pods-LoanApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +617,7 @@
 		};
 		A6BC42642B623B76003EDA1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7A40D7CA9FE7CE415E5EE8 /* Pods-LoanApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

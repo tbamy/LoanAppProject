@@ -58,7 +58,7 @@ class NetworkCall {
     }
     
     
-    func loginApiCall(url: URL, httpMethod: String, bearer: String, httpBodyPayload: [String: Any]? = nil) async throws -> LoginResponseModel? {
+    func loginApiCall(url: URL, httpMethod: String, httpBodyPayload: [String: Any]? = nil) async throws -> LoginResponseModel? {
         do {
             var urlRequest = URLRequest(url: url)
             urlRequest.httpMethod = httpMethod
@@ -68,7 +68,7 @@ class NetworkCall {
             }
 
             urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            urlRequest.setValue("Bearer \(bearer)", forHTTPHeaderField: "Authorization")
+//            urlRequest.setValue("Bearer \(bearer)", forHTTPHeaderField: "Authorization")
             
 
             let (data, _) = try await session.data(for: urlRequest)
